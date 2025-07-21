@@ -11,6 +11,11 @@ document.addEventListener('DOMContentLoaded', () => {
             displayProducts(allProducts);
         });
 
+    function formatPrice(price) {
+        return price.toLocaleString('th-TH');
+    }
+
+
     function displayProducts(products) {
         productList.innerHTML = ''; // Clear previous list
         products.forEach(product => {
@@ -19,7 +24,8 @@ document.addEventListener('DOMContentLoaded', () => {
             card.innerHTML = `
                 <img src="${product.image}" alt="${product.name}">
                 <h3>${product.name}</h3>
-                <p>ราคา: ${product.price} บาท</p>
+                <h3>${product.name}</h3>
+                <p>ราคา: ${formatPrice(product.price)} บาท</p>
             `;
             productList.appendChild(card);
         });
