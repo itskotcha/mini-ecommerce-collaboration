@@ -1,16 +1,16 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
-  background-color: #f9fafb;
-  color: #333;
+  background-color: #f3ede7;
+  color: #5b4636;
 }
 
 header {
-  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
-  color: #fff;
+  background: linear-gradient(90deg, #a1866f 0%, #6f5642 100%);
+  color: #fff7f0;
   padding: 1.5rem 1rem;
   text-align: center;
-  box-shadow: 0 2px 8px rgba(24, 40, 72, 0.3);
+  box-shadow: 0 2px 8px rgba(111, 86, 66, 0.3);
   font-weight: 600;
   letter-spacing: 1px;
 }
@@ -20,60 +20,69 @@ input[type="text"] {
   max-width: 400px;
   padding: 10px 15px;
   border-radius: 25px;
-  border: 1.5px solid #ccc;
+  border: 1.5px solid #bba18a;
   font-size: 1rem;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
   outline: none;
   box-sizing: border-box;
+  background-color: #f7f1e7
+  color: #5b4636;
 }
 
 input[type="text"]:focus {
-  border-color: #4b6cb7;
-  box-shadow: 0 0 8px rgba(75, 108, 183, 0.6);
+  border-color: #6f5642;
+  box-shadow: 0 0 8px rgba(111, 86, 66, 0.6);
+  background-color: #fff7f0;
 }
 
 main {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-template-columns: repeat(6, 1fr);
   gap: 24px;
   justify-content: center;
-  padding: 2rem 1rem;
-  max-width: 1200px;
+  padding: 2rem 1.5rem;
+  max-width: 1400px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .product-card {
-  background: #fff;
-  border: 1px solid #e0e0e0;
+  background: #f7f1e7;
+  border: 1px solid #bba18a;
   border-radius: 12px;
   margin: 0;
   padding: 20px;
   text-align: center;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 3px 8px rgba(91, 70, 54, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
+  color: #5b4636;
 }
 
 .product-card:hover {
   transform: scale(1.08);
-  box-shadow: 0 10px 20px rgba(75, 108, 183, 0.25);
+  box-shadow: 0 10px 20px rgba(111, 86, 66, 0.25);
+  background-color: #f0e6db;
 }
 
 .product-card img {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
   border-radius: 8px;
-  margin-bottom: 12px;
+  display: block;
+  margin: 0 auto 12px auto;
+  filter: brightness(0.95);
 }
 
 .product-card h3 {
   font-size: 1.2rem;
   margin: 0 0 8px;
-  color: #222;
+  color: #4b3826;
 }
 
 .product-card p {
-  color: #666;
+  color: #7d6b57;
   font-weight: 600;
   font-size: 1rem;
 }
@@ -85,6 +94,6 @@ main {
   font-weight: 600;
   padding: 25px;
   font-size: 1.3rem;
-  color: #4b6cb7;
+  color: #6f5642;
   user-select: none;
 }
